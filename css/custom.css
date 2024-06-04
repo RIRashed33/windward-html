@@ -1,0 +1,49 @@
+:root {
+    --white: #ffffff;
+    --low-contrast: #6B7580;
+    --mid-contrast: #454B52;
+    --high-contrast: #324050;
+    --accent-color: #1D4065;
+    --body-font: "Archivo", sans-serif;
+    --ocean-gradient: linear-gradient(100deg, #1D4065 4.73%, #2C6098 41.11%, #7DB8F6 87.68%);
+}
+body {
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--high-contrast);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a, button {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+h1 {
+    font-size: 81px;
+    font-weight: 700;
+    line-height: 1.11;
+}
+h2, h3, h5 {
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 1.18;
+}
+h3 {
+    font-size: 36px;
+}
+h5 {
+    font-size: 24px;
+}
+.small {
+    font-size: 13px;
+    line-height: 1.2;
+}
+.container {
+    max-width: 1280px;
+    padding: 0 20px;
+}
