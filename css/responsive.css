@@ -1,0 +1,107 @@
+@media screen and (max-width: 991px) {
+    .container {
+        padding: 0 12px;
+    }
+    body.active-menu a.site-logo img.white {
+        display: block;
+    }
+    body.active-menu a.site-logo img.primary {
+        display: none;
+    }
+    .mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 9;
+    }
+    button.hamburger-btn {
+        border: none;
+        background-color: transparent;
+        padding: 4px 0;
+        width: 40px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    button.hamburger-btn > span {
+        display: block;
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 5px;
+        background-color: var(--accent-color);
+        border-radius: 3px;
+        transition: all 0.4s;
+    }
+    body.active-menu button.hamburger-btn > span:first-child {
+        transform: rotate(-45deg);
+        top: 10px;
+        background-color: var(--white);
+    }
+    body.active-menu button.hamburger-btn > span:nth-child(2) {
+        opacity: 0;
+    }
+    body.active-menu button.hamburger-btn > span:last-child {
+        transform: rotate(45deg);
+        top: -10px;
+        background-color: var(--white);
+    }
+    nav.navbar {
+        background-color: var(--accent-color);
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 12px;
+        display: block;
+        text-align: center;
+        z-index: 5;
+        transition: all 0.4s;
+    }
+    nav.navbar > ul {
+        padding-top: 90px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    nav.navbar > ul > li > a {
+        color: var(--white);
+        padding: 4px;
+    }
+    .navbar-right {
+        padding: 24px 0;
+    }
+    .navbar-right > a {
+        border-color: var(--white);
+    }
+    .navbar-right > a.primary-btn:hover {
+        background: transparent;
+        color: var(--white);
+        border-color: var(--white);
+    }
+}
+@media screen and (min-width: 992px) {
+    nav.navbar {
+        padding: 0 0 0 96px;
+    }
+    nav.navbar > ul {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+    nav.navbar > ul > li > a {
+        padding: 3px 8px;
+        text-transform: uppercase;
+        color: var(--mid-contrast);
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+    }
+    nav.navbar > ul > li > a:hover {
+        border-bottom: 1px solid #9CB0C4;
+        text-shadow: 0 0 var(--high-contrast);
+    }
+
+}
