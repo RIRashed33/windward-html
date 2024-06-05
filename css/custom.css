@@ -39,6 +39,7 @@ h2, h3, h5 {
     font-size: 54px;
     font-weight: 600;
     line-height: 1.18;
+    margin-bottom: 0;
 }
 h3 {
     font-size: 36px;
@@ -202,4 +203,76 @@ section.hero-section h5 {
     max-width: 620px;
     position: relative;
     z-index: 2;
+}
+section.featured-section {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+section.featured-section::before, section.featured-section::after {
+    content: '';
+    display: block;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    border-radius: 100%;
+    background: rgba(156, 176, 196, 0.60);
+    filter: blur(300px);
+    z-index: -1;
+}
+section.featured-section::before {
+    top: 0;
+    left: 0;
+}
+section.featured-section::after {
+    bottom: 0;
+    right: 0;
+}
+.featured-heading {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+}
+ul.featured-nav > li > a {
+    padding: 8px 16px 7px;  
+    color: var(--high-contrast);
+    border-bottom: 1px solid transparent;
+}
+ul.featured-nav > li > a.active, ul.featured-nav > li > a:hover {
+    text-shadow: 0 0 var(--accent-color);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+.featured-tab {
+    padding: 64px 0;
+}
+.featured-gutter {
+    --bs-gutter-x: 32px;
+    --bs-gutter-y: 64px
+}
+.single-featured-content img {
+    display: block;
+    width: 100%;
+    border: 8px solid var(--white);
+    border-radius: 32px;
+    box-shadow: 4px 16px 64px 4px rgba(29, 64, 101, 0.10);
+    margin-bottom: 16px;
+}
+.single-featured-content a {
+    display: block;
+    padding: 16px 60px 16px 24px;
+    background-color: var(--white);
+    color: var(--high-contrast);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.17;
+    border-radius: 16px;
+    box-shadow: 4px 16px 64px 4px rgba(29, 64, 101, 0.10);
+    background-image: url(../img/icon/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center right 24px;
+}
+.single-featured-content a:hover {
+    background-position: center right 20px;
 }

@@ -89,6 +89,17 @@
     .footer-content .large-text {
         font-size: 48px;
     }
+    .featured-heading {
+        flex-direction: column;
+        text-align: center;
+    }
+    ul.featured-nav {
+        justify-content: center;
+    }
+    .featured-gutter {
+        --bs-gutter-x: 24px;
+        --bs-gutter-y: 48px
+    }
 
 
 
@@ -97,15 +108,27 @@
     h1 {
         font-size: 48px;
     }
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    h5, .single-featured-content a {
+        font-size: 20px;
+    }
     .footer-content .large-text {
         font-size: 36px;
         margin-bottom: 48px;
     }
-    section.hero-section {
+    section.hero-section, section.featured-section {
         padding: 40px 0;
     }
     .hero-img {
         border-radius: 16px;
+    }
+    .featured-tab {
+        padding: 48px 0;
     }
 
 
