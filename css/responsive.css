@@ -81,6 +81,20 @@
         color: var(--white);
         border-color: var(--white);
     }
+    .footer-content .large-text {
+        font-size: 48px;
+    }
+
+
+
+}
+@media screen and (max-width: 767px) {
+    .footer-content .large-text {
+        font-size: 36px;
+        margin-bottom: 48px;
+    }
+
+
 }
 @media screen and (min-width: 992px) {
     nav.navbar {
