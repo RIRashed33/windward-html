@@ -8,6 +8,7 @@
     --ocean-gradient: linear-gradient(100deg, #1D4065 4.73%, #2C6098 41.11%, #7DB8F6 87.68%);
 }
 body {
+    background-color: var(--white);
     font-family: var(--body-font);
     font-size: 16px;
     font-weight: 400;
@@ -32,6 +33,7 @@ h1 {
     font-size: 81px;
     font-weight: 700;
     line-height: 1.11;
+    margin-bottom: 0;
 }
 h2, h3, h5 {
     font-size: 54px;
@@ -43,26 +45,28 @@ h3 {
 }
 h5 {
     font-size: 24px;
+    margin-bottom: 16px;
 }
 .small {
     font-size: 13px;
     line-height: 1.25;
 }
-p:last-child {
+p:last-child, h5:last-child {
     margin-bottom: 0;
 }
 .container {
     max-width: 1280px;
     padding: 0 20px;
 }
-.primary-btn {
-    padding: 14px 24px;
+.primary-btn, .secondary-btn {
+    padding: 14px 32px;
     border-radius: 100px;
     border: 2px solid #9CB0C4;
     background: #FFF;
     min-width: 160px;
     text-align: center;
     font-weight: 700;
+    text-transform: uppercase;
     color: var(--accent-color);
 }
 .primary-btn:hover {
@@ -70,6 +74,13 @@ p:last-child {
     border-color: var(--accent-color);
     color: var(--white);
 }
+.secondary-btn {
+    background: var(--ocean-gradient);
+    color: var(--white);
+    padding: 16px 32px;
+    border: none;
+}
+
 
 /* Header Style */
 ul.topbar-content {
@@ -154,4 +165,41 @@ ul.social-link li a {
 }
 .footer-right-img img {
     border-radius: 32px;
+}
+
+/* Home Page Style */
+section.hero-section {
+    padding: 40px 0 80px;
+}
+.button-group {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    position: relative;
+    z-index: 2;
+}
+.hero-img {
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    border-radius: 32px;
+    text-align: end;
+    margin-top: 112px;
+}
+.hero-img img {
+    margin-top: -26.5%;
+}
+.hero-heading {
+    margin-bottom: 16px;
+}
+.hero-heading h1:last-child {
+    background: var(--ocean-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+}
+section.hero-section h5 {
+    max-width: 620px;
+    position: relative;
+    z-index: 2;
 }
