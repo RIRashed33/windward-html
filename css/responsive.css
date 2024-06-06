@@ -125,7 +125,9 @@
     .about-banner-text .button-group {
         justify-content: center;
     }
-
+    .wide-content img {
+        margin-bottom: 24px;
+    }
 
 
 }
@@ -167,6 +169,7 @@
     .benefits-content h2 {
         margin-bottom: 32px;
     }
+
 
 
 }
