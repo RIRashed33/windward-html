@@ -2,6 +2,9 @@
     h1 {
         font-size: 64px;
     }
+    .about-section-container {
+        border-radius: 0;
+    }
 }
 @media screen and (max-width: 991px) {
     .container {
@@ -102,9 +105,25 @@
     }
     .gutter-32 {
         --bs-gutter-x: 24px;
+        --bs-gutter-y: 24px
     }
     .joinig-content {
         gap: 48px;
+    }
+    section.about-banner-section {
+        padding: 0 0 48px;
+    }
+    .about-section-container {
+        border-radius: 0;
+    }
+    .about-banner-content {
+        flex-direction: column;
+    }
+    .about-banner-text {
+        text-align: center;
+    }
+    .about-banner-text .button-group {
+        justify-content: center;
     }
 
 
@@ -123,24 +142,30 @@
     h5, .single-featured-content a {
         font-size: 20px;
     }
+    section.wind-section, section.hero-section, .featured-tab {
+        padding: 48px 0;
+    }
     .footer-content .large-text {
         font-size: 36px;
         margin-bottom: 48px;
     }
-    section.hero-section, section.featured-section, section.joining-section {
-        padding: 48px 0;
-    }
     .hero-img {
         border-radius: 16px;
-    }
-    .featured-tab {
-        padding: 48px 0;
     }
     .joinig-content {
         flex-direction: column;
         text-align: center;
         padding: 48px 0;
         gap: 24px;
+    }
+    .about-box-content {
+        width: 185px;
+        height: 185px;
+        padding: 24px;
+        bottom: -24px;
+    }
+    .benefits-content h2 {
+        margin-bottom: 32px;
     }
 
 
