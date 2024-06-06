@@ -190,6 +190,14 @@
     .services-box h5 {
         font-size: 16px;
     }
+    .drawing-content {
+        padding: 24px 16px;
+    }
+    .drawing-content-box {
+        width: 180px;
+        height: 180px;
+        right: 0;
+    }
 
 
 
@@ -198,7 +206,6 @@
     .single-service-item {
         padding: 32px;
     }
-    
 }
 @media screen and (min-width: 992px) {
     nav.navbar {
@@ -220,6 +227,9 @@
     nav.navbar > ul > li > a:hover {
         border-bottom: 1px solid #9CB0C4;
         text-shadow: 0 0 var(--high-contrast);
+    }
+    .drawing-img img {
+        margin-bottom: 40px;
     }
 
 }
