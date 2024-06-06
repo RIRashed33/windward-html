@@ -169,6 +169,12 @@
     .benefits-content h2 {
         margin-bottom: 32px;
     }
+    .partner-text-content {
+        text-align: center;
+    }
+    .partner-text-content .button-group {
+        justify-content: center;
+    }
 
 
 

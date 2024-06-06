@@ -101,7 +101,7 @@ ul.topbar-content a:hover {
     color: var(--high-contrast);
     text-shadow: 0 0 var(--high-contrast);
 }
-ul.topbar-content li {
+ul.topbar-content li, section.featured-section, section.text-section {
     position: relative;
 }
 ul.topbar-content li:not(ul.topbar-content li:last-child)::after {
@@ -209,10 +209,7 @@ section.hero-section h5 {
     z-index: 2;
     color: var(--mid-contrast);
 }
-section.featured-section {
-    position: relative;
-}
-section.featured-section::before, section.featured-section::after {
+section.featured-section::before, section.featured-section::after, section.text-section::before, section.text-section::after {
     content: '';
     display: block;
     width: 60%;
@@ -387,13 +384,13 @@ span.cognition-icon {
 section.wide-section.wind-section {
     padding-bottom: 0;
 }
-section.wide-section {
+.wide-inner-container {
     position: relative;
     overflow: hidden;
 }
-section.wide-section::before {
+.wide-inner-container::before {
     content: url(../img/wide-section-before.jpg);
-    border-radius: 0px 32px 32px 0px;
+    border-radius: 32px;
     overflow: hidden;
     box-shadow: 4px 16px 64px 4px rgba(29, 64, 101, 0.10);
     position: absolute;
@@ -402,9 +399,9 @@ section.wide-section::before {
     right: calc(calc(100% + 885px) / 2);
     z-index: -1;
 }
-section.wide-section::after{
+.wide-inner-container::after{
     content: url(../img/wide-section-after.jpg);
-    border-radius: 32px 0px 0px 32px;
+    border-radius: 32px;
     overflow: hidden;
     box-shadow: 4px 16px 64px 4px rgba(29, 64, 101, 0.10);
     position: absolute;
@@ -428,4 +425,30 @@ section.wide-section::after{
 .wide-img img {
     border-radius: 32px;
     box-shadow: 4px 16px 64px 4px rgba(29, 64, 101, 0.10);
+}
+section.text-section::before {
+   left: 0;
+   bottom: 0;
+}
+section.text-section::after {
+    background: rgba(247, 224, 218, 0.80);
+    right: 0;
+    top: 0;
+}
+section.text-section h5 {
+    color: var(--mid-contrast);
+}
+section.text-section h3 {
+    color: var(--accent-color);
+}
+.partner-text-content h5 {
+    display: inline-block;
+    background: var(--ocean-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.partner-banner img {
+    width: calc(100% - 20px);
+    border-radius: 32px;
+    box-shadow: 20px 20px 0 #DFEAF5;
 }
