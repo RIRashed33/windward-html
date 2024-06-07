@@ -53,6 +53,16 @@ h1 span, h2 span, h3 span, h5 span {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+input, textarea {
+    border: none;
+    border-bottom: 1px solid #A9B2BC;
+    padding: 16px 16px 15px;
+    outline: none;
+    width: 100%;
+}
+input:focus, textarea:focus {
+    box-shadow: 0 4px 24px rgba(29, 64, 101, 0.15);
+}
 .small {
     font-size: 13px;
     line-height: 1.25;
@@ -545,4 +555,62 @@ section.text-section h3 {
     border-color: var(--accent-color);
     color: var(--accent-color);
     text-shadow: 0 0 var(--accent-color);
+}
+.blog-feed-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.search-field {
+    flex: 1;
+    max-width: 392px;
+    position: relative;
+}
+.search-field button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 56px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    padding: 14px;
+}
+.blog-items {
+    padding: 32px 0;
+}
+.single-blog-item{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.single-blog-item img {
+    width: 100%;
+    border: 8px solid var(--white);
+    border-radius: 32px;
+    box-shadow: 4px 16px 64px 4px rgba(29, 64, 101, 0.10);
+}
+.single-blog-item a.blog-title {
+    padding: 24px;
+    background-color: var(--white);
+    border-radius: 32px;
+    box-shadow: 4px 16px 64px 4px rgba(29, 64, 101, 0.10);
+}
+.single-blog-item .small {
+    display: inline-block;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--low-contrast);
+    margin-bottom: 4px;
+}
+.single-blog-item h5 {
+    color: var(--high-contrast);
+    font-weight: 400;
+    line-height: 1.2em;
+    height: 3.6em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
