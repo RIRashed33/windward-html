@@ -48,6 +48,11 @@ h5 {
     font-size: 24px;
     margin-bottom: 16px;
 }
+h1 span, h2 span, h3 span, h5 span {
+    background: var(--ocean-gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .small {
     font-size: 13px;
     line-height: 1.25;
@@ -192,21 +197,15 @@ section.hero-section {
 .hero-img img {
     margin-top: -26.5%;
 }
-.hero-heading {
-    margin-bottom: 16px;
+.hero-content {
     position: relative;
     z-index: 2;
 }
-.hero-heading h1:last-child {
-    background: var(--ocean-gradient);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.hero-content h1 span {
     font-style: italic;
 }
-section.hero-section h5 {
+.hero-content h5 {
     max-width: 620px;
-    position: relative;
-    z-index: 2;
     color: var(--mid-contrast);
 }
 section.featured-section::before, section.featured-section::after, section.text-section::before, section.text-section::after {
@@ -352,9 +351,6 @@ section.about-banner-section {
     margin: 0 auto 56px;
 }
 .benefits-content h2 span {
-    background: var(--ocean-gradient);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-style: italic;
 }
 .single-benefit-details {
@@ -441,12 +437,6 @@ section.text-section h5 {
 section.text-section h3 {
     color: var(--accent-color);
 }
-.partner-text-content h5, .drawing-content h3 span {
-    display: inline-block;
-    background: var(--ocean-gradient);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 .partner-banner img {
     width: calc(100% - 20px);
     border-radius: 32px;
@@ -471,9 +461,6 @@ section.text-section h3 {
 .services-box h5 span {
     font-weight: 500;
     font-style: italic;
-    background: var(--ocean-gradient);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 .services-items {
     display: flex;
