@@ -395,8 +395,8 @@ section.wide-section.wind-section {
     overflow: hidden;
 }
 .wide-inner-container::before {
-    content: url(../img/wide-section-before.jpg);
-    border-radius: 32px;
+    content: "";
+    border-radius: 0 32px 32px 0;
     overflow: hidden;
     box-shadow: 4px 16px 64px 4px rgba(29, 64, 101, 0.10);
     position: absolute;
@@ -404,10 +404,14 @@ section.wide-section.wind-section {
     transform: translateY(-50%);
     right: calc(calc(100% + 885px) / 2);
     z-index: -1;
+    width: calc(calc(100% - 885px) / 2);
+    height: 70%;
+    background-image: url(../img/wide-section-before.jpg);
+    background-size: cover;
 }
-.wide-inner-container::after{
-    content: url(../img/wide-section-after.jpg);
-    border-radius: 32px;
+.wide-inner-container::after {
+    content: "";
+    border-radius: 32px 0 0 32px;
     overflow: hidden;
     box-shadow: 4px 16px 64px 4px rgba(29, 64, 101, 0.10);
     position: absolute;
@@ -415,6 +419,10 @@ section.wide-section.wind-section {
     transform: translateY(-50%);
     left: calc(calc(100% + 885px) / 2);
     z-index: -1;
+    width: calc(calc(100% - 885px) / 2);
+    height: 70%;
+    background-image: url(../img/wide-section-after.jpg);
+    background-size: cover;
 }
 .div-820 {
     max-width: 820px;
