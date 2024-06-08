@@ -59,6 +59,7 @@ input, textarea {
     padding: 16px 16px 15px;
     outline: none;
     width: 100%;
+    background-color: var(--white);
 }
 input:focus, textarea:focus {
     box-shadow: 0 4px 24px rgba(29, 64, 101, 0.15);
