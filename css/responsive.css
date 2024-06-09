@@ -207,6 +207,9 @@
     .contact-content::after {
         content: none;
     }
+    .projects-details-content img {
+        border-radius: 16px;
+    }
 
 
 
