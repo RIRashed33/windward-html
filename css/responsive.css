@@ -107,6 +107,9 @@
         --bs-gutter-x: 24px;
         --bs-gutter-y: 24px
     }
+    .gutter-32.gy-5 {
+        --bs-gutter-y: 3rem;
+    }
     .joinig-content {
         gap: 48px;
     }
@@ -197,6 +200,12 @@
         width: 180px;
         height: 180px;
         right: 0;
+    }
+    section.contact-section {
+        background-color: #F0F9FE;
+    }
+    .contact-content::after {
+        content: none;
     }
 
 
