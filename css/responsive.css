@@ -65,7 +65,6 @@
     }
     body.active-menu button.hamburger-btn > span:nth-child(2) {
         opacity: 0;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     }
     body.active-menu button.hamburger-btn > span:last-child {
         -webkit-transform: rotate(45deg);
