@@ -107,6 +107,21 @@ section.wind-section {
 }
 
 /* Header Style */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(7.5px);
+    z-index: 99;
+}
+.header-pinned {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.10);
+}
+main.main-area {
+    margin-top: 140px;
+}
 ul.topbar-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -216,8 +231,31 @@ ul.social-link li a:hover {
 }
 
 /* Home Page Style */
+section.hero-section::after, section.featured-section:before, section.featured-section:after, section.text-section:before, section.text-section:after {
+    content: '';
+    display: block;
+    width: 60%;
+    max-width: 700px;
+    height: 60%;
+    max-height: 700px;
+    position: absolute;
+    border-radius: 100%;
+    background: rgba(156, 176, 196, 0.60);
+    -webkit-filter: blur(300px);
+            filter: blur(300px);
+    z-index: -1;
+}
+section.hero-section::after {
+    top: 100px;
+    right: calc(calc(100% - 1240px) / 2);
+    border-radius: 704px;
+    background: rgba(247, 224, 218, 0.80);
+    filter: blur(100px);
+}
 section.hero-section {
     padding: 40px 0 80px;
+    position: relative;
+    overflow-x: hidden;
 }
 .button-group {
     display: -webkit-inline-box;
@@ -252,20 +290,6 @@ section.hero-section {
 .hero-content h5 {
     max-width: 620px;
     color: var(--mid-contrast);
-}
-section.featured-section:before, section.featured-section:after, section.text-section:before, section.text-section:after {
-    content: '';
-    display: block;
-    width: 60%;
-    max-width: 700px;
-    height: 60%;
-    max-height: 700px;
-    position: absolute;
-    border-radius: 100%;
-    background: rgba(156, 176, 196, 0.60);
-    -webkit-filter: blur(300px);
-            filter: blur(300px);
-    z-index: -1;
 }
 section.featured-section:before {
     top: 0;
@@ -532,8 +556,9 @@ section.text-section h3 {
 .services-banner-content {
     position: relative;
 }
-.services-banner-content > img {
+.services-banner-content img {
     border-radius: 32px;
+    width: 100%;
 }
 .services-box {
     position: absolute;
